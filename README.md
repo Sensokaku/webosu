@@ -1,4 +1,4 @@
-# ¡nso
+# Webosu!
 
 A browser rhythm game where players click circles following rhythm of the music.
 
@@ -30,6 +30,7 @@ nohup node api.js &
 
 - beatmap hitsounds
 - pp & user system
+- some extra fixing/tweaks
 
 ## License Notes
 
