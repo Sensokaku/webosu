@@ -29,7 +29,7 @@ nohup node api.js &
 ## Todos/Coming soon
 
 - beatmap hitsounds
-- pp & user system
+- user system 
 - some extra fixing/tweaks
 
 ## License Notes
