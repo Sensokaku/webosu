@@ -46,7 +46,7 @@ canvas {
 
 
 nav {
-  background: #b63258;
+  background: #1BBE8D;
   color: #fff;
   display: flex;
   white-space: nowrap;
@@ -114,7 +114,7 @@ nav form {
 }
 /*fix placeholder color for chrome*/
 form input[type="text"]::-webkit-input-placeholder {
-  color: #c89eaa;
+  color: #FFFFFF;
 }
 form input[type="text"] {
   height: 36px;
@@ -142,6 +142,7 @@ form input {
   padding-left: 6px;
   padding-top: 2px;
   padding-bottom: 2px;
+  text-align: center;
 }
 
 .index-area table {
@@ -713,19 +714,20 @@ h1,h2,h3 {
   white-space: nowrap;
 }
 progress {
-  background: #333;
-  background-color: #333;
+  background: #0F825F;
+  background-color: #0F825F;
   border-style: none;
   height: 3px;
 }
 progress::-webkit-progress-bar{background:#333;}
-progress::-moz-progress-bar{background:#f6a;}
-progress::-webkit-progress-value{background:#f6a;}
-progress.finished::-moz-progress-bar{background:#6cf;}
-progress.finished::-webkit-progress-value{background:#6cf;}
+progress::-moz-progress-bar{background:#0F825F;}
+progress::-webkit-progress-value{background:#0F825F;}
+progress.finished::-moz-progress-bar{background:#1BBE8D;}
+progress.finished::-webkit-progress-value{background:#1BBE8D;}
 
 .text {
 	line-height: 1.8em;
+        text-align: center;
 }
 
 
@@ -902,7 +904,7 @@ progress.finished::-webkit-progress-value{background:#6cf;}
   color: #ed4956;
 }
 .beatmaplike.hint-liked::after {
-  content: "已收藏";
+  content: "Liked!";
   white-space: nowrap;
   position: absolute;
   bottom: 32px;
@@ -947,7 +949,7 @@ progress.finished::-webkit-progress-value{background:#6cf;}
   width: 4px;
   top: 10%;
   left: -1px;
-  background: rgba(255,190,0,0.8);
+  background: #1BBE8D;
   border-radius: 4px;
 }
 .panel td{
@@ -960,7 +962,7 @@ progress.finished::-webkit-progress-value{background:#6cf;}
   width: 40px;
 }
 input {
-  background: #892e48;
+  background: #0F825F;
   color: #fff;
   border: none;
 }
@@ -1011,7 +1013,7 @@ input[type=checkbox] + span::after{
 }
 
 input[type=checkbox]:checked + span {
-  background:#fc7bb4;         
+  background: #0F825F;         
 }
 
 input[type=checkbox]:checked + span::after{
@@ -1130,7 +1132,7 @@ hr {
   height: 2px;
   margin-bottom: 12px;
   border: none;
-  background: #ee6da7;
+  background: #1BBE8D;
 }
 
 
