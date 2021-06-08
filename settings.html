@@ -2,7 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>游戏设置</title>
+        <title>Settings</title>
+        <meta property="og:title" content="Webosu!">
+        <meta property="og:site_name" content="Settings">
+        <meta property="og:url" content="https://osu.kaku.moe">
+        <meta property="og:description" content="osu! but in a browser">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://osu.kaku.moe/icon.png"></head>
+
         <link rel="icon" href="favicon.png">
         <link rel="stylesheet" href="style/picnic.min.css">
         <link rel="stylesheet" type="text/css" href="style/main.css">
@@ -13,22 +20,22 @@
     <body>
         <nav id="main-nav">
             <div class="nav-link">
-                <a href="index.html" class="brand">Osaka Salmon University!</a>
-                <a href="new.html" class="pseudo button">最新</a>
-                <a href="hot.html" class="pseudo button">热门</a>
-                <a href="genre.html" class="pseudo button">分类</a>
+                <a href="index.html" class="brand">kaku.moe</a>
+                <a href="new.html" class="pseudo button">Latest</a>
+                <a href="hot.html" class="pseudo button">Hot</a>
+                <a href="genre.html" class="pseudo button">Listing</a>
             </div>
             <div class="nav-search">
                 <form action="search.html">
-                    <input type="text" name="q" placeholder="谱面关键词或sid"/>
+                    <input type="text" name="q" placeholder="Search Beatmap"/>
                     <input type="image" class="search-button" src="research.svg">
                 </form>
             </div>
             <div class="nav-tool">
-                <a href="local.html" class="pseudo button">收藏夹</a>
-                <a href="faq.html" class="pseudo button">常见问题</a>
-                <a href="settings.html" class="pseudo button active">设置</a>
-                <a onclick="document.documentElement.requestFullscreen();" class="pseudo button">进入全屏</a>
+                <a href="local.html" class="pseudo button">Favorites</a>
+                <a href="faq.html" class="pseudo button">FAQ</a>
+                <a href="settings.html" class="pseudo button active">Settings</a>
+                <a onclick="document.documentElement.requestFullscreen();" class="pseudo button">Fullscreen</a>
             </div>
         </nav>
         <div class="main-page" id="main-page">
@@ -38,14 +45,14 @@
                     <tr>
                         <td>
                             <h3>
-                                显示设置
+                                GAMEPLAY
                             </h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="option-name">
-                                背景变暗
+                                Background dim
                             </div>
                             <div class="option-control">
                                 <input id="dim-range" class="slider" type="range" min="0" max="100" value="0">
@@ -56,7 +63,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                背景模糊
+                                Background blur
                             </div>
                             <div class="option-control">
                                 <input id="blur-range" class="slider" type="range" min="0" max="8" value="0">
@@ -67,7 +74,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                光标大小
+                                Cursor size
                             </div>
                             <div class="option-control">
                                 <input id="cursorsize-range" class="slider" type="range" min="0.5" max="2.0" step="0.01" value="0.5">
@@ -76,9 +83,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td title="减少光标延迟，但兼容性差，可能闪烁或无法显示">
+                        <td title="Less latency but on some browsers doesn't display correctly">
                             <div class="option-name">
-                                启用硬件光标
+                                Show hardware cursor
                             </div>
                             <div class="option-control">
                                 <input id="showhwmouse-check" type="checkbox" /><span></span>
@@ -88,7 +95,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                滑条渐入
+                                Snaking in sliders
                             </div>
                             <div class="option-control">
                                 <input id="snakein-check" type="checkbox" /><span></span>
@@ -98,7 +105,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                滑条渐出
+                                Snaking out sliders
                             </div>
                             <div class="option-control">
                                 <input id="snakeout-check" type="checkbox" /><span></span>
@@ -108,7 +115,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                进入游戏自动全屏
+                                Automatic fullscreen
                             </div>
                             <div class="option-control">
                                 <input id="autofullscreen-check" type="checkbox" /><span></span>
@@ -118,7 +125,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                使用系统分辨率
+                                Use system resolution
                             </div>
                             <div class="option-control">
                                 <input id="sysdpi-check" type="checkbox" /><span></span>
@@ -128,7 +135,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                分辨率
+                                Resolution
                             </div>
                             <div class="option-control">
                                 <input id="dpi-range" class="slider" type="range" min="0.5" max="2.0" value="1.0" step="0.05">
@@ -140,14 +147,14 @@
                     <tr>
                         <td>
                             <h3>
-                                操作设置
+                                CONTROLS
                             </h3>
                         </td>
                     </tr>
                     <tr>
-                        <td title="以避免偶然改变音量">
+                        <td title="So that you don't change volume accidentally">
                             <div class="option-name">
-                                游戏时禁用鼠标滚轮
+                                Disable mouse wheel in gameplay
                             </div>
                             <div class="option-control">
                                 <input id="disable-wheel-check" type="checkbox" /><span></span>
@@ -155,9 +162,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td title="以避免偶然点击物体">
+                        <td title="So that you don't hit things accidentally">
                             <div class="option-name">
-                                游戏时禁用鼠标按钮
+                                Disable mouse buttons in gameplay
                             </div>
                             <div class="option-control">
                                 <input id="disable-button-check" type="checkbox" /><span></span>
@@ -167,7 +174,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                左键
+                                Left button
                             </div>
                             <div class="option-control">
                                 <input id="lbutton1select" type="button" value="oops"/>
@@ -178,7 +185,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                右键
+                                Right button
                             </div>
                             <div class="option-control">
                                 <input id="rbutton1select" type="button" value="oops"/>
@@ -189,7 +196,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                暂停键
+                                Pause button
                             </div>
                             <div class="option-control">
                                 <input id="pausebuttonselect" type="button" value="oops"/>
@@ -200,7 +207,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                跳过前奏
+                                Skip intro button
                             </div>
                             <div class="option-control">
                                 <input id="skipbuttonselect" type="button" value="oops"/>
@@ -211,14 +218,14 @@
                     <tr>
                         <td>
                             <h3>
-                                音频设置
+                                AUDIO
                             </h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="option-name">
-                                主音量
+                                Master volume
                             </div>
                             <div class="option-control">
                                 <input id="mastervolume-range" class="slider" type="range" min="0" max="100" value="0">
@@ -229,7 +236,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                音效音量
+                                Sound volume
                             </div>
                             <div class="option-control">
                                 <input id="effectvolume-range" class="slider" type="range" min="0" max="100" value="0">
@@ -240,7 +247,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                音乐音量
+                                Music volume
                             </div>
                             <div class="option-control">
                                 <input id="musicvolume-range" class="slider" type="range" min="0" max="100" value="0">
@@ -251,7 +258,7 @@
                     <tr title="不建议使用！如果不确定有很大延迟，请勿使用！">
                         <td>
                             <div class="option-name">
-                                音频偏移
+                                Audio offset
                             </div>
                             <div class="option-control">
                                 <input id="audiooffset-range" class="slider" type="range" min="-50" max="50" value="-50">
@@ -342,14 +349,14 @@
                     <tr>
                         <td>
                             <h3>
-                                皮肤设置
+                                SKIN SETTINGS
                             </h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <div class="option-name">
-                                隐藏物体序号
+                                Don't show hit circle numbers
                             </div>
                             <div class="option-control">
                                 <input id="hidenumbers-check" type="checkbox" /><span></span>
@@ -359,7 +366,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                隐藏Great判定提示
+                                Don't show "Great" (300s)
                             </div>
                             <div class="option-control">
                                 <input id="hidegreat-check" type="checkbox" /><span></span>
@@ -369,7 +376,7 @@
                     <tr>
                         <td>
                             <div class="option-name">
-                                隐藏连接线
+                                Don't show follow points
                             </div>
                             <div class="option-control">
                                 <input id="hidefollowpoints-check" type="checkbox" /><span></span>
@@ -379,7 +386,7 @@
                     <tr>
                         <td>
                             <br/>
-                            <input id="restoredefault-btn" type="button" class="warnbtn" value="全部恢复默认设置"/>
+                            <input id="restoredefault-btn" type="button" class="warnbtn" value="Reset to defaults"/>
                         </td>
                     </tr>
                 </table>

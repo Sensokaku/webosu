@@ -2,7 +2,14 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>戳泡泡</title>
+        <title>Latest Maps</title>
+        <meta property="og:title" content="Latest Beatmaps">
+        <meta property="og:site_name" content="Webosu!">
+        <meta property="og:url" content="https://osu.kaku.moe">
+        <meta property="og:description" content="osu! but in a browser">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://osu.kaku.moe/icon.png"></head>
+
         <link rel="stylesheet" href="style/picnic.min.css">
         <link rel="stylesheet" type="text/css" href="style/main.css">
         <link rel="stylesheet" type="text/css" href="style/font.css">
@@ -35,22 +42,22 @@
 
         <nav id="main-nav">
             <div class="nav-link">
-                <a href="index.html" class="brand">Osaka Salmon University!</a>
-                <a href="new.html" class="pseudo button active">最新</a>
-                <a href="hot.html" class="pseudo button">热门</a>
-                <a href="genre.html" class="pseudo button">分类</a>
+                <a href="index.html" class="brand">kaku.moe</a>
+                <a href="new.html" class="pseudo button active">Latest</a>
+                <a href="hot.html" class="pseudo button">Hot</a>
+                <a href="genre.html" class="pseudo button">Listing</a>
             </div>
             <div class="nav-search">
                 <form action="search.html">
-                    <input type="text" name="q" placeholder="谱面关键词或sid"/>
+                    <input type="text" name="q" placeholder="Search Beatmap"/>
                     <input type="image" class="search-button" src="research.svg">
                 </form>
             </div>
             <div class="nav-tool">
-                <a href="local.html" class="pseudo button">收藏夹</a>
-                <a href="faq.html" class="pseudo button">常见问题</a>
-                <a href="settings.html" class="pseudo button">设置</a>
-                <a onclick="document.documentElement.requestFullscreen();" class="pseudo button">进入全屏</a>
+                <a href="local.html" class="pseudo button">Favorites</a>
+                <a href="faq.html" class="pseudo button">FAQ</a>
+                <a href="settings.html" class="pseudo button">Settings</a>
+                <a onclick="document.documentElement.requestFullscreen();" class="pseudo button">Fullscreen</a>
             </div>
         </nav>
 
@@ -59,10 +66,11 @@
                 <div class="beatmap-list" id="beatmap-list">
                     <!-- to be filled in script -->
                 </div>
-                <div class="button" style="width:100%; margin-bottom: 10px;" id="btnmore">加载更多</div>
-                <div class="text">推荐使用最新版本 Firefox 或 Chrome.</div>
-                <div class="text">内测版v1.4.3. <a href="https://github.com/111116/osu">Github</a></div>
-                <div class="text">由<a href="https://osu.sayobot.cn/">Sayobot</a>提供谱面</div>
+                <div class="button" style="width:100%; margin-bottom: 10px;" id="btnmore">Show more</div>
+                <div class="text">A modern browser is recommended.</div>
+                <div class="text">Original source code - <a href="https://github.com/111116/osu">Github</a></div>
+                <div class="text">Forked version 1.5.0
+                <div class="text">Beatmaps provided by <a href="https://osu.sayobot.cn/">Sayobot</a></div>
             </div>
             <!-- <div class="side-panel">
                 to be activated in script
