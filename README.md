@@ -26,7 +26,7 @@ To host a separate live score, redirect send/fetch api requests to localhost:400
 nohup node api.js &
 ```
 
-## Todos (probably)
+## Todos/Coming soon
 
 - beatmap hitsounds
 - pp & user system
